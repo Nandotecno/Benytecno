@@ -1,0 +1,39 @@
+de  funcs . backUteis  importar  imagensBase64 , multilang , validadores , uteis
+de  funcs . backUteis  importar  cores , conector , licença , editItem
+de  funcs . backUteis  import  backAba2Front , backSegundoFrame
+do  frontend de importação do Janelas  
+de  Janelas . frontCads  import  cadAuto , cadClientes , cadEmpresa , cadMarcaProd
+de  Janelas . frontCads  import  cadEstoque , cadFornec , cadServ , cadProd
+de  Janelas . frontCads  import  cadPagamento , cadTec , AtMObra , consFinan
+de  Janelas . estiloWidgets . widgets_Glac  import  StyleGlac
+de  multiprocessamento . pool  import  ThreadPool
+
+class  Application ( uteis . Functions , imagensBase64 . ImagensBase64 , conector . Conector ,
+        frontend . Tela , cadAuto . Automoveis , cadClientes . Clientes , multilang . Lang ,
+        cores . Cores , cadFornec . Fornecedores , cadTec . Tecnicos ,
+        validadores . Validadores , cadProd . Produtos , cadServ . Servicos ,
+        licença . Data_company , cadMarcaProd . MarcaProdutos , AtMObra . MaodeObra ,
+        cadEmpresa . Empresa , cadEstoque . Estoque , consFinan . Financeiro ,
+        cadPagamento . PagamentoOrc , editItem . EditItens , backAba2Front . Aba2 ,
+        backSegundoFrame . SegundoFrame ):
+    def  __init__ ( self ):
+        eu . núcleos ()
+        eu . dados ()
+        eu . multiGlacx ()
+        eu . images_base64 ()
+        eu . tela ()
+        # configurações de treeview
+        style  =  StyleGlac ()
+        estilo . theme_use ( 'default' )
+        style2  =  StyleGlac ( "Treeview" , ( 'Calibri' , 9 ), "gray20" , "gray50" )
+        style3  =  StyleGlac ( "Vertical.TScrollbar" , ( 'Calibri' , 10 ), "# D1D1D1" )
+        style4  =  StyleGlac ( "TNotebook" , ( 'Arial' , 10 , 'negrito' ), "gray40" , "gray60" , "gray50" )
+        style5  =  StyleGlac ( "TOptionMenu" , ( 'Arial' , 10 , 'negrito' ), "gray40" , "gray60" , "gray50" )
+        style2 . map ( 'Treeview' , background = [( 'selected' , '# 7499b8' )], foreground = [( 'selected' , "gray20" )])
+        style4 . map ( 'TNotebook' , background = [( 'selected' , '# F5B041' )], foreground = [( 'selected' , "gray20" )])
+        estilo . element_create ( "plain.field" , "from" , "clam" )
+        style6  =  StyleGlac ( "EntryStyle.TEntry" , ( 'Calibri' , 10 ), "gray25" , "gray60" , "gray25" )
+        ##
+        eu . janela . mainloop ()
+
+Aplicação ()
